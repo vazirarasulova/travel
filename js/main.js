@@ -11,17 +11,38 @@ var elPlane = document.querySelector(".travel__length-plane");
 
 elForm.addEventListener("submit", function(e){
   e.preventDefault();
+
+
+  if (elValue <= 0 || isNaN(elValue)){
+
+    elWalker.textContent = "Raqam kiriting ";
+    elBicycle.textContent = "Raqam kiriting ";
+    elCar.textContent = "Raqam kiriting ";
+    elPlane.textContent = "Raqam kiriting ";
+
+    elWalker.classList.add("result-error");
+    elBicycle.classList.add("result-error");
+    elCar.classList.add("result-error");
+    elPlane.classList.add("result-error");
+
+    return
+  }
+   else{
+    elWalker.classList.remove("result-error");
+    elWalker.classList.add("result-success");
+    elBicycle.classList.remove("result-error");
+    elBicycle.classList.add("result-success");
+    elCar.classList.remove("result-error");
+    elCar.classList.add("result-success");
+    elPlane.classList.remove("result-error");
+    elPlane.classList.add("result-success");
+  }
   
   var elValue = elInput.value;
   var walkerSpead = 3.6;
   var bicycleSpead = 20.1;
   var carSpead = 70;
   var planeSpead = 800;
-  
-  
-  
-  
-  
   
   
   
@@ -60,7 +81,6 @@ elForm.addEventListener("submit", function(e){
     
   }
   
-
   
   elWalker.textContent = walker();
   elBicycle.textContent = bicycle();

@@ -49,3 +49,13 @@
   font-weight: 600;
   color: royalblue;
 }
+
+.result-error{
+  display: block;
+  color: red;
+}
+
+.result-success{
+  display: block;
+  color: green;
+}
