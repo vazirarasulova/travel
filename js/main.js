@@ -29,7 +29,7 @@ elForm.addEventListener("submit", function(e){
     var walkerTime =  elValue / walkerSpead;
     var walkerHours = Math.floor(walkerTime);
     var walkersMinut = Math.floor((walkerTime - walkerHours) * 60);
-    var walkersTotal = (walkerHours + " soat" + walkersMinut + " minut")
+    var walkersTotal = (walkerHours + " soat " + walkersMinut + " minut")
     return walkersTotal;
     
   }
@@ -38,7 +38,7 @@ elForm.addEventListener("submit", function(e){
     var bicycleTime =  elValue / bicycleSpead;
     var bicycleHours = Math.floor(bicycleTime);
     var bicycleMinut = Math.floor((bicycleTime - bicycleHours) * 60);
-    var bicycleTotal = (bicycleHours + " soat" + bicycleMinut + " minut")
+    var bicycleTotal = (bicycleHours + " soat " + bicycleMinut + " minut")
     return bicycleTotal;
   }
   
@@ -46,7 +46,7 @@ elForm.addEventListener("submit", function(e){
       var carTime =  elValue / carSpead;
       var carHours = Math.floor(carTime);
       var carMinut = Math.floor((carTime - carHours) * 60);
-      var carTotal = (carHours + " soat" + carMinut + " minut")
+      var carTotal = (carHours + " soat " + carMinut + " minut")
       return carTotal;
     
   }
@@ -55,7 +55,7 @@ elForm.addEventListener("submit", function(e){
     var planeTime =  elValue / planeSpead;
     var planeHours = Math.floor(planeTime);
     var planeMinut = Math.floor((planeTime - planeHours) * 60);
-    var planeTotal = (planeHours + " soat" + planeMinut + " minut")
+    var planeTotal = (planeHours + " soat " + planeMinut + " minut")
     return planeTotal;
     
   }
