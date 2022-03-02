@@ -12,6 +12,7 @@ var elPlane = document.querySelector(".travel__length-plane");
 elForm.addEventListener("submit", function(e){
   e.preventDefault();
 
+  elValue = elInput.value;
 
   if (elValue <= 0 || isNaN(elValue)){
 
